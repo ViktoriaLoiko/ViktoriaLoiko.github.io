@@ -76,7 +76,14 @@
             audio.currentTime = 0;
         });
         //отслеживаем событие, когда пользователь отпускает кнопку
-        $(this).keyup(function(event))
-    })
+        $(this).keyup(function(event) {
+            //снова создаем переменную с нужным data-key
+            var key = $(this).find('.key[data-key='+event.which+']');
+            //убираем класс, который подсвечивает кнопку
+            key.toggleClass('playing');
+        });
+    });
     </script>
+
 </body>
+</html>
