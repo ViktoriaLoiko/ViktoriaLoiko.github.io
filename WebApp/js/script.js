@@ -154,4 +154,23 @@ window.addEventListener('DOMContentLoaded', function() {
             this.changeToUSD();
         }
     }
+    changeToUSD() {
+        this.price = this.price * this.transfer;
+    }
+
+    render() {
+        const element = document.createElement('div');
+
+        if (this.classes.length === 0) {
+            this.clases = "menu__item";
+            element.classList.add(this.classes);
+        } else {
+            this.clases.forEach(className => element.classList.add(className));
+        }
+        element.innerHTML = `
+            <img src=${this.src} alt=${this.alt}>
+            <h3 class="menu__item-subtitle">${this.title}</h3>
+
+        `;
+    };
 });
