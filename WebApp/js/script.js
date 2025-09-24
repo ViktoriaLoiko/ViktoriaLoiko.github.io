@@ -122,7 +122,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    this.document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', (e) => {
         if (e.code === "Escape" && modal.classList.contains('show')) {
             closeModal();
         }
@@ -137,7 +137,7 @@ window.addEventListener('DOMContentLoaded', function() {
             window.removeEventListener('scroll', showModalByScroll);
         }
     }
-    this.window.addEventListener('scroll', showModalByScroll)
+    window.addEventListener('scroll', showModalByScroll)
 
     //Используем классы для создания карточек меню
 
@@ -150,7 +150,7 @@ window.addEventListener('DOMContentLoaded', function() {
             this.price = price;
             this.classes = classes;
             this.parent = document.querySelector(parentSelector);
-            this.transfer =1;
+            this.transfer = 1;
             this.changeToUSD();
         }
     
@@ -162,10 +162,10 @@ window.addEventListener('DOMContentLoaded', function() {
             const element = document.createElement('div');
 
             if (this.classes.length === 0) {
-                this.clases = "menu__item";
+                this.classes = "menu__item";
                 element.classList.add(this.classes);
             } else {
-                this.clases.forEach(className => element.classList.add(className));
+                this.classes.forEach(className => element.classList.add(className));
             }
 
             element.innerHTML = `
