@@ -27,6 +27,11 @@
       "name": "Viktoria",
       "phone": "3456777",
       "id": 1
+    },
+    {
+      "name": "Marina",
+      "phone": "45677786",
+      "id": 2
     }
   ]
 }
