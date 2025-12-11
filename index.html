@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио!</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Viktoria Loiko — Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-     	Я начинающий, но способный разработчик ПО!   
-    </header> 
-    <div class="container">
-    	Мои работы
-    	<div class="my_projects">
-    		<a href="1/index.html">Сайт на чистом HTML/CSS</a>
-    		<br>
-    		<a href="2/index.html">Сайт на Bootstrap</a>
-		<br>
-    		<a href="3/index.html">Landing page</a>		
-		<br>
-    		<a href="calc/index.html">Calc Ajax</a>
-		
-    	</div>
-    </div> 
-    <footer>
-    	Готов к сотрудничеству!
-	mailto:<a href="#">Me@ee.ee</a>
 
-    </footer>
+<!-- Навигация (фиксированная) -->
+<nav class="navbar">
+    <div class="nav-left">Viktoria Loiko</div>
+    <div class="nav-right">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="https://github.com/ViktoriaLoiko" target="_blank">GitHub</a>
+        <button class="theme-toggle" id="themeToggle">🌓</button>
+    </div>
+</nav>
+
+<div class="container">
+
+<header class="hero">
+    <img src="img/avatar.JPG" class="avatar" alt="My foto">
+    <h1 class="title">Виктория Лойко</h1>
+    <p class="subtitle">Начинающий разработчик • Frontend & Backend</p>
+
+    <div class="hero-buttons">
+        <a href="https://github.com/ViktoriaLoiko" target="_blank" class="btn">GitHub</a>
+        <a href="#projects" class="btn">Мои проекты</a>
+    </div>
+</header>
+
+<section class="about" id="about">
+    <h2>Обо мне</h2>
+    <p>
+        Я начинающий разработчик, изучаю HTML, CSS, JavaScript, TypeScript, 
+        Node.js, PHP и работу с базами данных.  
+        Люблю создавать чистые интерфейсы и красивые проекты, учусь полный стек разработки 
+        и развиваюсь каждый день.
+    </p>
+    <p>Готова к сотрудничеству<br>
+        mailto: <a href="#">viktoria.loiko@ivkhk.ee</a>
+    </p>
+</section>
+
+<section class="skills" id="skills">
+    <h2>Навыки</h2>
+    <div class="skill-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">PHP</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Express</span>
+        <span class="skill">MySQL / SQL</span>
+        <span class="skill">Sequelize</span>
+        <span class="skill">Figma</span>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2>Проекты</h2>
+
+    <!-- GitHub проекты будут подставляться сюда автоматически -->
+    <div class="project-grid" id="projectGrid">
+        <p>Загружаю проекты...</p>
+    </div>
+</section>
+
+<footer>
+    © 2024 - 2025 • Viktoria Loiko • Portfolio  
+</footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
