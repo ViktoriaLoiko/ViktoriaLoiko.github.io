@@ -185,5 +185,13 @@ footer {
     to   { opacity: 1; transform: translateY(0); }
 }
 
+/* Ссылка */
+body.dark a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(180, 130, 255, 0.9);
+}
 
+body.dark a:visited {
+    color: #c7a6ff; /* мягкий фиолетовый, хорошо виден на темном фоне */
+}
 
