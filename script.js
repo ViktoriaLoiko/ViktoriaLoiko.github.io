@@ -11,7 +11,7 @@ const projectGrid = document.getElementById("projectGrid");
 const allowedRepos = [
     "todo-ts",
     "TS_2",
-    "HarmooniaSaar",
+    "Snake",
     "ArtSchool",
     "PhoneStore"
 ];
