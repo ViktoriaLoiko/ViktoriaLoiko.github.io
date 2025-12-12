@@ -10,7 +10,7 @@ const username = "ViktoriaLoiko";
 const projectGrid = document.getElementById("projectGrid");
 const allowedRepos = [
     "todo-ts",
-    "TS_2",
+    "TS_Draw",
     "Snake",
     "ArtSchool",
     "PhoneStore"
