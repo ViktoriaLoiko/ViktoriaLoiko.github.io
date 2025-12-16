@@ -12,7 +12,7 @@ const allowedRepos = [
     "todo-ts",
     "TS_Draw",
     "Snake",
-    "ArtSchool",
+    "Chatts",
     "PhoneStore"
 ];
 
