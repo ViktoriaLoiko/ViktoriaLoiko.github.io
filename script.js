@@ -13,7 +13,8 @@ const allowedRepos = [
     "TS_Draw",
     "Snake",
     "Chatts",
-    "PhoneStore"
+    "PhoneStore",
+    "System_App_Soft"
 ];
 
 async function repoHasPages(repoName) {
